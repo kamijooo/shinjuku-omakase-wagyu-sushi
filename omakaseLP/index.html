@@ -119,11 +119,13 @@
 <!-- BEGIN: Social Proof Bar -->\
 <section class="py-8 bg-ginza-black">\
 <div class="flex overflow-x-auto gap-4 px-6 hide-scrollbar">\
+<template data-hidden="tripadvisor">
 <!-- Card 1 -->\
 <div class="flex-shrink-0 w-48 border border-ginza-gold/30 p-4 rounded-lg bg-ginza-gold/5 text-center">\
 <p class="text-[10px] uppercase tracking-widest text-ginza-gold mb-1">Tripadvisor</p>\
 <p class="font-cormorant text-lg italic leading-tight">Tokyo 2025<br/>No.1 Ranked</p>\
-</div>\
+</div>
+</template>\
 <!-- Card 2 -->\
 <div class="flex-shrink-0 w-48 border border-ginza-gold/30 p-4 rounded-lg bg-ginza-gold/5 text-center">\
 <p class="text-[10px] uppercase tracking-widest text-ginza-gold mb-1">Google Reviews</p>\
@@ -204,7 +206,9 @@
       </p>\
 <div class="flex items-center gap-4 text-xs font-josefin tracking-[0.2em] text-ginza-gold">\
 <span class="px-3 py-1 border border-ginza-gold/30 rounded">NO PORK</span>\
-<span class="px-3 py-1 border border-ginza-gold/30 rounded">NO ALCOHOL IN FOOD</span>\
+<template data-hidden="alcohol">
+<span class="px-3 py-1 border border-ginza-gold/30 rounded">NO ALCOHOL IN FOOD</span>
+</template>\
 </div>\
 </div>\
 </section>\
